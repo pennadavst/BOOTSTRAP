@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gadget store</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Ibarra+Real+Nova|Niconne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg px-4">
+        <a href="#" class="navbar-brand"
+          ><img src="./images/logo.png" alt="" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav text-capitalize mx-auto">
+            <li class="nav-item active">
+              <a href="#header" class="nav-link">home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#about" class="nav-link">about</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#store" class="nav-link">store</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#services" class="nav-link">services</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#duos" class="nav-link">duos</a>
+            </li>
+          </ul>
+
+          <div class="nav-info-items d-none d-lg-flex">
+            <!-- single info -->
+            <div
+              class="nav-info align-items-center d-flex justify-content-between mx-lg-5"
+            >
+              <span class="info-icon mx-lg-3"
+                ><i class="fas fa-phone"></i
+              ></span>
+              <p class="mb-0 phoneNumber">+123 456 789</p>
+            </div>
+            <!-- single info -->
+            <div
+              id="cart-info"
+              class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5"
+            >
+              <span class="cart-info__icon mr-lg-3"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
+              <p class="mb-0 text-capitalize">
+                <span id="item-count">2</span>
+                items-$
+                <span class="item-total">1150</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end of nav -->
+
+      <!-- banner -->
+      <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div class="col-10 mx-auto banner text-center">
+            <h1 class="text-capitalize">
+              Welcome to<strong class="banner-title"> Gadget store</strong>
+            </h1>
+            <a href="#store" class="btn banner-link text-uppercase my-2"
+              >explore</a
+            >
+          </div>
+          <!-- cart -->
+          <div class="cart" id="cart">
+            <!-- cart-item -->
+            <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+              <img src="./images/controller-2.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
+              <div class="item-text">
+                <p id="cart-item-title" class="font-weight-bold mb-0">
+                  cart item</p>
+                  <span>$</span>
+                  <span id="cart-item-price" class="cart-item-price mb-0">250</span>
+                
+              </div>
+              <a href="#" id="cart-item-remove" class="cart-item-remove"><i class="fas fa-trash"></i></a>
+            </div>
+            <!-- end of cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+              <img src="./images/laptop-1.jpeg" alt="" class="img-fluid rounded-circle" id="item-img">
+              <div class="item-text">
+                <p id="cart-item-title" class="font-weight-bold mb-0">
+                  cart item</p>
+                <span>$</span>
+                <span id="cart-item-price" class="cart-item-price mb-0">2100</span>
+            
+              </div>
+              <a href="#" id="cart-item-remove" class="cart-item-remove"><i class="fas fa-trash"></i></a>
+            </div>
+            <!-- end of cart-item -->
+
+            <!-- total -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+              <h5>total</h5>
+              <h5>$ <strong id="cart-total" class="font-weight-bold">2350</strong></h5>
+            </div>
+            <!-- end of total -->
+
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+              <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
+              <a href="#" id="clear-cart" class="btn btn-red text-uppercase">checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of banner -->
+    </header>
+    <!-- end of header -->
+
+    <!-- about -->
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6 my-5">
+            <h1 class="text-capitalize">
+              about<strong class="banner-title"> us</strong>
+            </h1>
+            <p class="my-4 text-muted w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              molestiae commodi impedit nemo quisquam sed beatae eos unde
+              doloribus mollitia, laudantium atque voluptatibus nesciunt
+              accusamus doloremque dignissimos quibusdam quis debitis aut modi.
+              Minus ut nihil ullam repellendus aliquid ad eum architecto, esse,
+              alias omnis temporibus sequi voluptates eligendi tenetur nam.
+            </p>
+            <a href="#" class="btn btn-black text-uppercase">explore</a>
+          </div>
+          <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+            <div class="about-img__container">
+              <img src="./images/about-img.jpeg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of about -->
+
+    <!-- store -->
+    <section id="store" class="store py-5">
+      <div class="container">
+        <!-- section title -->
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6 text-center">
+            <h1 class="text-capitalize">
+              our<strong class="banner-title"> store</strong>
+            </h1>
+          </div>
+        </div>
+        <!-- end of section title -->
+
+        <!-- filter buttons -->
+        <div class="row">
+          <div
+            class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap"
+          >
+            <a
+              href="#"
+              class="btn btn-black text-uppercase filter-btn m-2"
+              dta-filter="all"
+              >all</a
+            >
+            <a
+              href="#"
+              class="btn btn-black text-uppercase filter-btn m-2"
+              dta-filter="all"
+              >mobiles</a
+            >
+            <a
+              href="#"
+              class="btn btn-black text-uppercase filter-btn m-2"
+              dta-filter="all"
+              >laptops</a
+            >
+            <a
+              href="#"
+              class="btn btn-black text-uppercase filter-btn m-2"
+              dta-filter="all"
+              >controllers</a
+            >
+            <a
+              href="#"
+              class="btn btn-black text-uppercase filter-btn m-2"
+              dta-filter="all"
+              >cameras</a
+            >
+          </div>
+        </div>
+        <!-- end of filter buttons -->
+        <!-- search box -->
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text search-box" id="search-icon"
+                    ><i class="fas fa-search"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  name=""
+                  id="search-item"
+                  placeholder="item..."
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of search box -->
+
+        <!-- store items -->
+        <div class="row store-items" id="store-items">
+          <!-- single item -->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles"
+            data-item="mobiles"
+          >
+            <div class="card single-item">
+              <div class="img-container">
+                <img
+                  src="./images/mobile-1.jpeg"
+                  alt=""
+                  class="card-img-top store-img"
+                />
+                <span class="store-item-icon"
+                  ><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <div class="cart-body">
+                <div
+                  class="card-text d-flex justify-content-between text-capitalize p-3"
+                >
+                  <h5 class="store-item-name">mobile</h5>
+                  <h5 class="store-item-value">
+                    $<strong id="store-item-price" class="font-weight-bold"
+                      >900</strong
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/mobile-2.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">mobile</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">750</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/mobile-3.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">mobile</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1100</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/controller-1.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">controller</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">399</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/controller-2.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">controller</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">250</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/controller-3.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">controller</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">350</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/laptop-1.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">laptop</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1900</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/laptop-2.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">laptop</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1750</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/laptop-3.jpg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">laptop</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">2100</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/camera-1.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">camera</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1100</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/camera-2.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">camera
+              </h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1350</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mobiles" data-item="mobiles">
+           <div class="card single-item">
+            <div class="img-container">
+             <img src="./images/camera-3.jpeg" alt="" class="card-img-top store-img" />
+             <span class="store-item-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+            <div class="cart-body">
+             <div class="card-text d-flex justify-content-between text-capitalize p-3">
+              <h5 class="store-item-name">camera</h5>
+              <h5 class="store-item-value">
+               $<strong id="store-item-price" class="font-weight-bold">1299</strong>
+              </h5>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end of single item -->
+        </div>
+        <!-- end of store items -->
+      </div>
+    </section>
+    <!-- end of store -->
+
+
+
+    <!-- services -->
+    <section id="services" class="services py-5">
+     <div class="containe">
+      <div class="row">
+       <!-- single service -->
+       <div class="col-md-4 text-center my-3">
+        <img src="./images/serviceIcon.png" alt="" class="service-icons">
+        <h6 class="text-uppercase my-3 service-title font-weight-bold">24-hours service</h6>
+        <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quos quis maxime illum, sunt facilis!</p>
+       </div>
+       <!-- end of single service -->
+
+       <!-- single service -->
+       <div class="col-md-4 text-center my-3">
+        <img src="./images/serviceIcon(C).png" alt="" class="service-icons">
+        <h6 class="text-uppercase my-3 service-title font-weight-bold">100% customer satisfaction</h6>
+        <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quos
+         quis maxime illum, sunt facilis!</p>
+       </div>
+       <!-- end of single service -->
+
+       <!-- single service -->
+       <div class="col-md-4 text-center my-3">
+        <img src="./images/serviceIcon(FS).png" alt="" class="service-icons">
+        <h6 class="text-uppercase my-3 service-title font-weight-bold">free shipping</h6>
+        <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quos
+         quis maxime illum, sunt facilis!</p>
+       </div>
+       <!-- end of single service -->
+      </div>
+     </div>
+    </section>
+    <!-- end of services -->
+
+<!-- duos -->
+<section id="duos" class="duos py-5">
+ <div class="container">
+  <!-- section title -->
+  <div class="row">
+   <div class="col-10 mx-auto col-md-6 text-center">
+    <h1 class="text-capitalize">
+     our<strong class="banner-title"> duos</strong>
+    </h1>
+   </div>
+  </div>
+  <!-- end of section title -->
+
+  <div class="row">
+   <!-- single duo -->
+   <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+    <h3 class="py-3">Macbook and Iphone</h3>
+    <div class="text-muted">
+     <p class="my-3">An apple Macbook with an Iphone</p>
+     <p class="my-3">20% discount</p>
+     <p class="my-3">Best deal</p>
+     <p class="my-3">Free Apple airpods</p>
+     <button type="button" class="btn btn-red mb-3 text-capitalize">Order now</button>
+     <p class="text-lowercase mb-4">Starting at $7500</p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <img src="./images/duos2.png" alt="" class="img-fluid">
+    </div>
+   </div>
+   <!-- end of single duo -->
+   
+   <!-- single duo -->
+   <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+    <h3 class="py-3">Iphone and Ipad</h3>
+    <div class="text-muted">
+     <p class="my-3">An apple Iphone with an Ipad</p>
+     <p class="my-3">20% discount</p>
+     <p class="my-3">Best deal</p><p class="my-3">Free Apple airpods</p>
+     <button type="button" class="btn btn-red mb-3 text-capitalize">Order now</button>
+     <p class="text-lowercase mb-4">Starting at $3700</p>
+     <img src="./images/duos1.png" alt="" class="img-fluid">
+    </div>
+   </div>
+   <!-- end of single duo -->
+
+
+   <!-- single duo -->
+   <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+    <h3 class="py-3">Macbook and Ipad</h3>
+    <div class="text-muted">
+     <p class="my-3">An apple Macbook with an Ipad</p>
+     <p class="my-3">20% discount</p>
+     <p class="my-3">Best deal</p>
+     <p class="my-3">Free Apple airpods</p>
+     <button type="button" class="btn btn-red mb-3 text-capitalize">Order now</button>
+     <p class="text-lowercase mb-4">Starting at $10500</p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <img src="./images/duos3.png" alt="" class="duosImg img-fluid">
+    </div>
+   </div>
+   <!-- end of single duo -->
+  </div>
+ </div>
+</section>
+<!-- end of duos -->
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 footer-title py-5">
+        <h1 class="text-capitalize text-center">
+          <strong class="banner-title">Gadget store</strong>
+        </h1>
+        <div class="footer-icons mt-5 d-flex justify-content-around flex-wrap">
+          <a href="#" class="footer-icon"><i class="fab fa-facebook "></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-instagram text-danger"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-whatsapp text-success"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+        <h3 class="mb-5">contact</h3>
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon"><i class="fas fa-map"></i></span>
+          <span>123 main street, Karlskrona, Sweden.</span>
+        </p>
+
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon"><i class="fas fa-envelope"></i></span>
+          <span>email@email.com</span>
+        </p>
+
+        <p class="d-flex flex-wrap">
+          <span class="mr-4 footer-icon"><i class="fas fa-phone"></i></span>
+          <span>123 456 789</span>
+        </p>
+      </div>
+
+    </div>
+    
+  </div>
+</footer>
+<!-- end of footer -->
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a54f36be87.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

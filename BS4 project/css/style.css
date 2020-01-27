@@ -1,0 +1,35 @@
+body {
+  font-family: "Cantarell", sans-serif;
+}
+
+.height {
+  min-height: 100vh;
+}
+
+.title-underline {
+  width: 200px;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.height-80 {
+  min-height: 92vh;
+}
+
+.about-picture {
+  background: url(../images/laptop.jpeg) center/cover no-repeat fixed;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+#filler {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(../images/fillerImg.jpeg) center/cover no-repeat fixed;
+}
+
+#progress {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(../images/progress.jpeg) center/cover no-repeat fixed;
+}
