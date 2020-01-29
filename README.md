@@ -7,7 +7,7 @@
     *Extra large- 1200px
                               -(px= Pixels)
 
-*A little bit of Javascript may be included in some projects to toggle the navigation bar(only in small screen sizes[ 576px ]).
+*A little bit of Javascript may be included in some projects to toggle the navigation bar.
 
 ***              ***
 *****   NOTE   *****
