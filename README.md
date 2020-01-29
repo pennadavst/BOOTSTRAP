@@ -1,4 +1,4 @@
-* This repository contain projects that were developed using BOOTSTRAP 4.
+* The main focus of the projects in this repository is to show the effective use of BOOTSTRAP 4.
 * All the projects are responsive for all screen sizes.
 * The breakpoints for the screen sizes are as follows:
     *Small- 576px
